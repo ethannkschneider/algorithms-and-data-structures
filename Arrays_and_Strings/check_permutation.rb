@@ -14,6 +14,7 @@ def check_permutation(str1, str2)
 end
 
 # Attempt 2
+# Use a counter hash to ensure that the character counts are the same
 def check_permutation2(str1, str2)
   return false if str1.length != str2.length
   str1_char_count = Hash.new(0)
